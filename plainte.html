@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>statspro - plainte</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a rel="noopener" href="/" class="logo">
+        <h1>statspro</h1>
+      </a>
+      <ul class="nav-links">
+        <li> <a rel="noopener" href="index.html">accueil</a></li>
+        <li> <a rel="noopener" href="a-propos.html">à propos</a></li>
+        <li> <a rel="noopener" href="a-propos.html#mission">mission</a></li>
+        <li> <a rel="noopener" href="services.html">prestations de service</a></li>
+        <li> <a rel="noopener" href="team.html">équipe</a></li>
+        <li> <a rel="noopener" href="plainte.html">plainte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="complaint-form" class="complaint-form" action="#" method="post">
+      <h2 class="form title">formulaire de plainte</h2>
+
+      <div class="form-group">
+        <label for="full-name">nom complet</label>
+        <input type="text" id="full-name" name="full-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">adresse e mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">numéro de téléphone</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="complaint-type">type de plainte</label>
+        <select id="complaint-type" name="complaint-type" required>
+          <option value=""> sélectionnez un type de plainte </option>
+          <option value="harassment">harcèlement</option>
+          <option value="discrimination">discrimination</option>
+          <option value="fraud">fraude</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="complaint-details">détails de la plainte</label>
+        <textarea id="complaint-details" name="complaint-details" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">envoyer la plainte</button>
+    </form>
+
+  </main>
+
+  <!-- website footer -->
+  <footer id="footer">
+    <div class="social-links">
+      <a rel="noopener" target=" blank" href="https://facebook.com/" class="social-link-facebook">facebook</a>
+      <a rel="noopener" target=" blank" href="https://twitter.com/" class="social-link-twitter">twitter</a>
+      <a rel="noopener" target=" blank" href="https://www.instagram.com/" class="social-link-instagram">instagram</a>
+    </div>
+    <p class="footer copyright">
+      &copy; 2023 statspro all rights reserved.
+    </p>
+  </footer>
+
+</body>
+
+</html>
